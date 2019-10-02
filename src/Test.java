@@ -1,47 +1,50 @@
 import java.util.Scanner;
 
 public class Test {
+	public static int myRound(double d) {
+		String input = d + "";
+		char dist = input.charAt(2);
+		int result = dist - '0';
+		
+		if(result > 4) {
+			return (int)d + 1;
+		}else {
+			return (int)d;
+		}
+		
+	}
+	
+	public static int myFloor(double d) {
+		return (int)d;
+	}
+	
+	public static int myCeil(double d) {
+		double result = d - (int)d;
+		
+		if(result > 0) {
+			return (int)d + 1;
+		}else {
+			return (int)d;
+		}
+	}
+	
 	public static void main(String[] args) {
 		
+		System.out.printf("myRound(3.141592) = %d%n", myRound(3.141592));
+		System.out.printf("myRound(3.141592) = %d%n", myRound(5.50));
+		System.out.printf("myRound(3.141592) = %d%n", myRound(3.99));
+		System.out.println();
+		System.out.printf("myFloor(3.141592) = %d%n", myFloor(3.141592));
+		System.out.printf("myFloor(3.141592) = %d%n", myFloor(5.50));
+		System.out.printf("myFloor(3.141592) = %d%n", myFloor(3.99));
+		System.out.println();
+		System.out.printf("myCeil(3.141592) = %d%n", myCeil(3.141592));
+		System.out.printf("myCeil(3.141592) = %d%n", myCeil(5.50));
+		System.out.printf("myCeil(3.141592) = %d%n", myCeil(3.99));
+		System.out.println("======================");
+		System.out.printf("myRound(랜덤값) = %d%n", myRound(Math.random()*10));
+		System.out.printf("myFloor(랜덤값) = %d%n", myFloor(Math.random()*10));
+		System.out.printf("myCeil(3.00) = %d%n", myCeil(3.00));
 		
-	final int CASE_CONVERTER = 32;
-	
-	int i = 0;
-//	//1번
-	while(i < 26) {
-		System.out.print((char)(97+i));
-		i++;
-	}
-	System.out.println();
-	//2번
-	while(i < 26) {
-		System.out.print((char)(122-i-CASE_CONVERTER));
-		i++;
-	}
-	System.out.println();
-	//3번
-	while(i < 10) {
-		System.out.print((char)(48 + i));
-		i++;
-	}
-	System.out.println();
-	//4번
-	Scanner sc = new Scanner(System.in);
-	int input = sc.nextInt();
-	
-	while(i < input) {
-		System.out.print((char)('A'+ i));
-		i++;
-	}
-	System.out.println();
-	//5번
-	while(i < 10) {
-		System.out.print((char)(Math.random()*25 + 65));
-		i++;
-	}
-	
-	
-	
-	
 	}
 }
