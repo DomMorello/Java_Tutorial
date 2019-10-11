@@ -14,7 +14,7 @@ public class HashMap3 {
 		addPhoneNo("회사", "김대리", "010-555-5555");
 		addPhoneNo("회사", "박대리", "010-666-6666");
 		addPhoneNo("회사", "이과장", "010-777-7777");
-		addPhoneNo("세탁", "010-888-8888");
+		addPhoneNo("세탁", "010-888-8888"); 
 		
 		printList();
 		
