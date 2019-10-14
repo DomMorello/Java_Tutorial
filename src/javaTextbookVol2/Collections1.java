@@ -54,6 +54,6 @@ public class Collections1 {
 		
 		System.out.println("list2 = "+list2);
 		
-	}
+ 	}
 
 }
