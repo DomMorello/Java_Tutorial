@@ -1,6 +1,6 @@
 package kbClass;
 
-public class HomeMain {
+public class Constructor1 {
 	public static void main(String[] args) {
 		MyMovie savingPrivateRyan = new MyMovie("라이언 일병 구하기","1994","3회","600$","톰행크스","이동현");
 		MyMovie jinhong82 = new MyMovie("82년생 박진홍","박진홍","이동현");
