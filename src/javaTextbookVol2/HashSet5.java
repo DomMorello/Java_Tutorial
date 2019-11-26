@@ -35,8 +35,8 @@ class Person2{
 		return false;
 	}
 	
-	public int hashcode() {
-		return Objects.hash(name, age);
+	public int hashCode() {
+		return (name+age).hashCode();
 	}
 	
 	public String toString() {
